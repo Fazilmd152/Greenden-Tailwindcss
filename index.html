@@ -15,7 +15,7 @@
         <h1 class="text-2xl">Greenden</h1>
 
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-            class=" w-6 md:hidden">
+            class=" w-6 md:hidden cursor-pointer" id="menubar">
             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
         </svg>
 
@@ -28,6 +28,18 @@
             </ul>
         </div>
     </nav>
+
+    <!-- side navbar -->
+     <section id="sidenav" class="bg-green-100 fixed z-20 top-0 right-0" style="width: 50%;height: 100vh;right: -50%;transition: 0.35s;">
+        <div  class=" p-5 flex justify-end">
+            <svg xmlns="http://www.w3.org/2000/svg" id="xmark" class="w-4 flex justify-end cursor-pointer" viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>
+        </div>
+        <ul class="flex flex-col gap-10 text-gray-600 items-center">
+            <li><a class="hover:underline hover:text-black">Home</a></li>
+            <li><a href="products.html" class="hover:underline hover:text-black">Products</a></li>
+            <li><a href="contact.html" class="hover:underline hover:text-black">Contacts</a></li>
+        </ul>
+     </section>
 
     <!-- Header section -->
     <section class="p-4 bg-green-100 flex  md:p-10 justify-center items-center">
@@ -156,6 +168,8 @@
         <p >Standard chunk of Lorem ipsum used since the 1500s is reproduced below those interests.</p>
         <p >@ 2021 Greenden.com</p>
     </section>
+
+    <script src="greenden.js"></script>
 </body>
 
 </html>
